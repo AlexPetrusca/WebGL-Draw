@@ -717,30 +717,30 @@ function keypress(ev, gl) {
             if (ev.keyCode === 65) // A
                 lshearY -= 0.1;
         }
-    } else {
-        if (ev.keyCode === 39) { // right arrow
-            shadingMode += 1;
-        } else if(ev.keyCode === 37) { // right arrow
-            shadingMode -= 1;
-        }
+    }
 
-        if(shadingMode > 5)
-            shadingMode = 5;
-        if(shadingMode < 1)
-            shadingMode = 1;
+    if (ev.keyCode === 39) { // right arrow
+        shadingMode += 1;
+    } else if(ev.keyCode === 37) { // right arrow
+        shadingMode -= 1;
+    }
 
-        let shading = document.getElementById("shading");
-        if (shadingMode === 1) {
-            shading.innerText = "Gouraud";
-        } else if (shadingMode === 2) {
-            shading.innerText = "Phong";
-        } else if (shadingMode === 3) {
-            shading.innerText = "Depth";
-        } else if (shadingMode === 4) {
-            shading.innerText = "Rim";
-        } else if (shadingMode === 5) {
-            shading.innerText = "Cel";
-        }
+    if(shadingMode > 5)
+        shadingMode = 5;
+    if(shadingMode < 1)
+        shadingMode = 1;
+
+    let shading = document.getElementById("shading");
+    if (shadingMode === 1) {
+        shading.innerText = "Gouraud";
+    } else if (shadingMode === 2) {
+        shading.innerText = "Phong";
+    } else if (shadingMode === 3) {
+        shading.innerText = "Depth";
+    } else if (shadingMode === 4) {
+        shading.innerText = "Rim";
+    } else if (shadingMode === 5) {
+        shading.innerText = "Cel";
     }
 
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
