@@ -1,0 +1,38 @@
+input {
+    width: 75px;
+    margin-right: 10px;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+#nSlide {
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    margin-top: 10px;
+    width: 500px;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+#flexWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#shading {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#canvasWrapper {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}

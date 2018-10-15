@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Drawer</title>
+    <link rel="stylesheet" type="text/css" href="drawer.css">
+</head>
+
+<body onload="main()">
+<div id="flexWrapper">
+    <div id="canvasWrapper">
+        <canvas oncontextmenu="return false" id="canvas" width="500" height="500">
+            Please use a browser that supports "canvas"
+        </canvas>
+    </div>
+    <div class="menu around">
+        <button id="ySpin">Spin Animation</button>
+        <button id="square">Square Animation</button>
+        <button id="gravity">Gravity</button>
+    </div>
+    <div id="menuAmbient" class="menu">
+        <div style="margin-right: 0.5em">Ambient Light Color -</div>
+        <div><label for="rAmbient">R: </label><input id="rAmbient" type="number"></div>
+        <div><label for="gAmbient">G: </label><input id="gAmbient" type="number"></div>
+        <div><label for="bAmbient">B: </label><input id="bAmbient" type="number"></div>
+    </div>
+    <div id="menuSpecular" class="menu">
+        <div style="margin-right: 0.5em">Specular Light Color -</div>
+        <div><label for="rSpecular">R: </label><input id="rSpecular" type="number"></div>
+        <div><label for="gSpecular">G: </label><input id="gSpecular" type="number"></div>
+        <div><label for="bSpecular">B: </label><input id="bSpecular" type="number"></div>
+    </div>
+    <div class="menu">
+        <label for="nSlide" style="margin-right: 0.5em">Specular Coefficient: </label>
+        <input id="nSlide" type="range" min="2" max="128" value="8" step="1" class="slider">
+    </div>
+    <div class="menu">
+        <label>
+            To draw a model, <b>left click</b> multiple times on the canvas. To finish drawing simply <b>right click</b>.
+            After drawing, <b>left click</b> objects and <b>drag</b> them to move them around. Select object and use
+            <b>WASD keys</b> to apply shear transform.
+        </label>
+    </div>
+    <label style="margin-top: 0.5em; margin-bottom: 0.5em;">
+        ----------------------------------------------------------------------------------------------
+    </label>
+    <div>
+        <label> Use <b>right</b> and <b>left</b> arrow keys to go between <b>next</b> and <b>previous</b> shading models.</label>
+    </div>
+    <div style="margin-top: 0.5em">
+        <label style="margin-right: 0.5em">Current Shading: </label>
+        <label id="shading">Gouraud</label>
+    </div>
+</div>
+<script type="text/javascript" src="../lib/webgl-utils.js"></script>
+<script type="text/javascript" src="../lib/webgl-debug.js"></script>
+<script type="text/javascript" src="../lib/cuon-utils.js"></script>
+<script type="text/javascript" src="../lib/cuon-matrix.js"></script>
+<script type="text/javascript" src="../lib/load-file.js"></script>
+<script type="text/javascript" src="../lib/ioSOR.js"></script>
+<script type="text/javascript" src="drawer.js"></script>
+</body>
+</html>
