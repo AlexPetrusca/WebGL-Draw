@@ -4,4 +4,4 @@ An application to draw generalized cylinder wireframes over a model polyline and
 
 The app has options to perform animations on the drawn objects and apply different shading modes including Gouraud, Phong, Depth, Rim, and Cel shading. It also has options to change the specular constant and modify ambient and specular light color. There are also options to scale up an object and apply a shear transform to an object.
 
-![alt text](https://canvas.ucsc.edu/courses/12961/files/529763/preview?verifier=XqyTXxBsZGLENUcDUIY2wTJBtf8hsQbvpTZZdW1X)
+![alt text](https://camo.githubusercontent.com/9c7a39b777e9798dff62314dfe53e03da37ecd88/68747470733a2f2f63616e7661732e756373632e6564752f636f75727365732f31323936312f66696c65732f3532393736332f707265766965773f76657269666965723d58717954587842735a474c454e5563445549593277544a42746638687351627670545a5a64573158)
